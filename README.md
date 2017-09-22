@@ -13,9 +13,9 @@ _Takes a number input from the user and generates a range of numbers from 1 to t
 | Behavior Description                                                                    | Input | Output                        |
 |-----------------------------------------------------------------------------------------|-------|-------------------------------|
 | The program will count sequentially up to the provided number.                          | 3     | [1, 2, 3]                     |
-| The program will determine whether or not a number is divisible by 3.                   | 4     | false                         |
-| The program will determine whether or not a number is divisible by 5.                   | 5     | true                          |
-| The program will determine whether or not a number is divisible by 15.                  | 45    | true                          |
+| The program will determine whether or not a number is divisible by both 3 and 5.        | 15    | true                          |
+| The program will determine whether or not a number is divisible by 5 and not 3.         | 15    | false                         |
+| The program will determine whether or not a number is divisible by 3 and not 5.         | 9     | true                          |
 | Each number that is divisible by 3, it will be replaced with the word "ping".           | 3     | [1, 2, 'ping']                |
 | Each number that is divisible by 5 will be replaced with the word "pong".               | 5     | [1, 2, 'ping', 4, 'pong']     |
 | Each number that is divisible by 15 will be replaced with the words "ping-pong".        | 15    | ['ping', 13, 14, 'ping-pong'] |
