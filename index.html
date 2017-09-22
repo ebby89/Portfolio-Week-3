@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Ping Pong</title>
+  </head>
+  <body>
+    <main class="container center">
+      <div class="jumbotron heading">
+        <h1>Ping Pong</h1>
+      </div>
+
+      <div>
+        <img class="img-circle" src="img/saw.jpg" alt="Picture of the 'Saw' clown.">
+        <h2 class="center">"Would you like to play a game?"</h2>
+<br>
+        <hr>
+        <div class="left-text">
+          <h2>The Rules:</h2>
+          <p>Ping Pong will count from 1 to your number, with the following exceptions:
+            <ul>
+              <li>Numbers divisible by 3 become 'ping'</li>
+              <li>Numbers divisible by 5 become 'pong'</li>
+              <li>Numbers divisible by 15 become 'ping-pong'</li>
+            </ul>
+          </p>
+        </div>
+        <hr>
+        <br>
+      </div>
+
+      <form id="pingPongForm" class="form-group">
+        <label for="userInput">Enter your number:</label>
+        <input id="userInput" class="form-control input-small" type="number" name="" value="">
+
+        <button class="btn btn-black" type="submit" name="button">Let's do this!</button>
+      </form>
+
+      <div id="showResult">
+      </div>
+    </main>
+  </body>
+</html>
+
+
+<!-- LIVE SERVER -->
+<!-- STEP ONE: Clone from https://github.com/tapio/live-server -->
+<!-- STEP TWO: Install: Type "npm install -g live-server" -->
+<!-- STEP THREE: Initiate live-server: Type "live-server" in terminal after enabling-->
