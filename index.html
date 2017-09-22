@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
     <link href="css/styles.css" type="text/css" rel="stylesheet">
     <script src="js/jquery-3.2.1.js"></script>
@@ -17,35 +16,36 @@
         <img src="img/saw.jpg" alt="Picture of the 'Saw' clown.">
         <h1>Ping Pong</h1>
       </div>
-      <div>
-        <h1 class="center">"Would you like to play a game?"</h2>
-        <hr>
-        <div class="left-text">
-          <h2>The Rules:</h2>
-          <p>Ping Pong will count from 1 to your number, with the following exceptions:
-            <ol>
-              <li>Numbers divisible by 3 become 'ping'</li>
-              <li>Numbers divisible by 5 become 'pong'</li>
-              <li>Numbers divisible by 15 become 'ping-pong'</li>
-            </ol>
-          </p>
-        </div>
-        <hr>
+      <div id="hide">
+          <h1 class="center">"Would you like to play a game?"</h2>
+          <hr>
+          <div class="left-text">
+            <h2>The Rules:</h2>
+            <p>Ping Pong will count from 1 to your number, with the following exceptions:
+              <ol>
+                <li>Numbers divisible by 3 become 'ping'</li>
+                <li>Numbers divisible by 5 become 'pong'</li>
+                <li>Numbers divisible by 15 become 'ping-pong'</li>
+              </ol>
+            </p>
+          </div>
+          <hr>
+
+  <!-- FORM -->
+        <form id="pingPongForm" class="form-group">
+          <label for="numberInput"><h2>Enter your number:</h2></label>
+          <input id="numberInput" class="form-control input-small" type="number">
+          <button class="btn btn-black" type="submit" name="button">Let's do this!</button>
+        </form>
       </div>
-<!-- FORM -->
-      <form id="pingPong" class="form-group">
-        <label for="numberInput"><h2>Enter your number:</h2></label>
-        <input id="numberInput" class="form-control input-small" type="number">
-        <button class="btn btn-black" type="submit" name="button">Let's do this!</button>
-      </form>
     </div>
 
 <!-- SHOW OUTPUT -->
-    <div id="result">
+    <div id="output">
       <div class="panel">
         <div class="panel-heading">
-          <center><button type="click" class="btn btn-danger" id="refresh" onClick="window.location.reload()">Play Again?</button></center>
-          <center><h3>You entered the number: <span class="resultNumber"></span></h3></center>
+          <center><button type="click" class="btn btn-danger" onClick="window.location.reload()">Play Again?</button></center>
+          <center><h2>You entered: <span></span></h2></center>
         </div>
         <div class="panel-body">
           <center><ul>

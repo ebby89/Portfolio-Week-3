@@ -6,7 +6,7 @@
 
 ## Description
 
-_Takes a number input from the user and generates a range of numbers from 1 to the input number. Each response is evaluated against a set of rules that determine whether a number, 'ping', 'pong', or 'ping-pong' are displayed. This project was created to practice using arrays and looping during our third weel at Epicodus._
+_Takes a number input from the user and generates a range of numbers from 1 to the input number. Each response is evaluated against a set of rules that determine whether a number, 'ping', 'pong', or 'ping-pong' are displayed. This project was created to practice using arrays and looping during our third week at Epicodus._
 
 ## Specs
 
@@ -31,7 +31,7 @@ _You may also visit https://ebby89.github.io/Portfolio-Week-3 to view the web ap
 
 ## Known Bugs
 
-_N/A_
+_None that I am currently aware of._
 
 ## Support and contact details
 
