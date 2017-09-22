@@ -10,18 +10,12 @@
   color: white;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
 }
 
-main {
+body {
   background-color: red;
   height: 100%;
 
-}
-
-img {
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 
 h1 {
@@ -33,7 +27,6 @@ h2, label, button {
   color: black;
   font-weight: bolder;
   font-family: 'Amatic SC', cursive;
-  font-size: 200%;
 }
 
 hr {
@@ -42,11 +35,36 @@ hr {
   border-color: black;
 }
 
+#all {
+  position: relative;
+  overflow: hidden;
+}
+
+#all h1 {
+  position: relative;
+  z-index: 2;
+}
+
+#all img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.2;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: auto;
+  margin-right: 40px;
+}
+
 .input-small {
-  width: 15%;
+  width: 12%;
+  margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10px;
 }
 
 .btn-black {
@@ -62,4 +80,8 @@ hr {
   width: 70%;
   margin-left: 30%;
   margin-right: auto;
+}
+
+#result {
+  display: none;
 }

@@ -11,40 +11,48 @@
     <title>Ping Pong</title>
   </head>
   <body>
-    <main class="container center">
-      <div class="jumbotron heading">
+    <div class="container center">
+<!-- HEADER, IMG, RULES -->
+      <div id="all" class="jumbotron heading">
+        <img src="img/saw.jpg" alt="Picture of the 'Saw' clown.">
         <h1>Ping Pong</h1>
       </div>
-
       <div>
-        <img class="img-circle" src="img/saw.jpg" alt="Picture of the 'Saw' clown.">
-        <h2 class="center">"Would you like to play a game?"</h2>
-<br>
+        <h1 class="center">"Would you like to play a game?"</h2>
         <hr>
         <div class="left-text">
           <h2>The Rules:</h2>
           <p>Ping Pong will count from 1 to your number, with the following exceptions:
-            <ul>
+            <ol>
               <li>Numbers divisible by 3 become 'ping'</li>
               <li>Numbers divisible by 5 become 'pong'</li>
               <li>Numbers divisible by 15 become 'ping-pong'</li>
-            </ul>
+            </ol>
           </p>
         </div>
         <hr>
-        <br>
       </div>
-
-      <form id="pingPongForm" class="form-group">
-        <label for="userInput">Enter your number:</label>
-        <input id="userInput" class="form-control input-small" type="number" name="" value="">
-
+<!-- FORM -->
+      <form id="pingPong" class="form-group">
+        <label for="numberInput"><h2>Enter your number:</h2></label>
+        <input id="numberInput" class="form-control input-small" type="number">
         <button class="btn btn-black" type="submit" name="button">Let's do this!</button>
       </form>
+    </div>
 
-      <div id="showResult">
+<!-- SHOW OUTPUT -->
+    <div id="result">
+      <div class="panel">
+        <div class="panel-heading">
+          <center><button type="click" class="btn btn-danger" id="refresh" onClick="window.location.reload()">Play Again?</button></center>
+          <center><h3>You entered the number: <span class="resultNumber"></span></h3></center>
+        </div>
+        <div class="panel-body">
+          <center><ul>
+          </ul></center>
+        </div>
       </div>
-    </main>
+    </div>
   </body>
 </html>
 
