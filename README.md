@@ -10,16 +10,15 @@ _Takes a number input from the user and generates a range of numbers from 1 to t
 
 ## Specs
 
-| Behavior Description                                                                    | Input | Output                        |
-|-----------------------------------------------------------------------------------------|-------|-------------------------------|
-| The program will count sequentially up to the provided number.                          | 3     | [1, 2, 3]                     |
-| The program will determine whether or not a number is divisible by both 3 and 5.        | 15    | true                          |
-| The program will determine whether or not a number is divisible by 5 and not 3.         | 15    | false                         |
-| The program will determine whether or not a number is divisible by 3 and not 5.         | 9     | true                          |
-| Each number that is divisible by 3, it will be replaced with the word "ping".           | 3     | [1, 2, 'ping']                |
-| Each number that is divisible by 5 will be replaced with the word "pong".               | 5     | [1, 2, 'ping', 4, 'pong']     |
-| Each number that is divisible by 15 will be replaced with the words "ping-pong".        | 15    | ['ping', 13, 14, 'ping-pong'] |
-| Each number will only display the word associated with it's highest divisible number.   | 30    | [28, 29, 'ping-pong']         |
+| Behavior Description                                                                         | Input   | Output                            |
+|----------------------------------------------------------------------------------------------|---------|-----------------------------------|
+| The program only allows numbers to be entered.                                               | abc     | 'Please enter a positive number.' |
+| The program only allows positive numbers to be entered.                                      | -1      | 'Please enter a positive number.' |
+| The program will create an alert pop-up for a blank input submission.                        | (empty) | 'Please enter a positive number.' |
+| The program will display a sequential list of numbers from 1 up to the inputted number.      | 3       | [1, 2, 3]                         |
+| The program recognizes numbers divisible by 3 and replaces them with "ping".                 | 3       | 1, 2, 'ping'                    |
+| The program recognizes numbers divisible by 5 and replaces them with "pong".                 | 5       | 1, 2, 'ping', 4, 'pong'         |
+| The program recognizes numbers divisible by both 3 and 5 and replaces them with "ping-pong". | 15      | ... 'ping', 13, 14, 'ping-pong' |
 
 ## Setup/Installation Requirements
 
@@ -27,7 +26,8 @@ _Takes a number input from the user and generates a range of numbers from 1 to t
 * _Open index.html in your favorite browser_
 * _Read the rules listed above the input field_
 * _Enter an appropriate number into the input field_
-* _Check out the epic ping-pong match you just created!_
+
+_You may also visit https://ebby89.github.io/Portfolio-Week-3 to view the web application._
 
 ## Known Bugs
 
